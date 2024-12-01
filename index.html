@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Github Users</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <header>
+
+        <span class="logo">
+            Profile Github Users
+        </span>
+
+    </header>
+
+
+    <main>
+
+        <section class="containerSearch">
+
+            <input type="search" id="searchUser" class="searchUser" placeholder="joao3872" />
+
+            <button id="btnSearch" class="btnSearch">Search</button>
+
+        </section>
+
+
+        <article class="containerProfile">
+
+            <section class="infoUser">
+
+                <img src="" id="avatar" class="imgProfile" />
+
+                <section class="containerUserName">
+
+                    <h1 id="name" class="name"></h1>
+
+                    <h3 id="user"></h3>
+
+                </section>
+
+            </section>
+
+            <section class="visitProfile">
+
+                <h3>Visitar Perfil:</h3>
+
+                <a href="" target="_blank" id="profile" class="profile" rel="noopener noreferrer"></a>
+
+            </section>
+
+
+            <h3 class="titleCenter">Biografia:</h3>
+
+            <p id="bio" class="bio"></p>
+
+
+            <h3 class="titleCenter">Blog, Portfólio e entre outros:</h3>
+
+            <secrion class="containerUrl">
+
+                <img src="images/link-solid.svg" alt="icon url" class="iconUrl" />
+
+                <a href="" id="site" class="site" target="_blank" rel="noopener noreferrer"></a>
+
+            </secrion>
+
+
+            <p class="siteMessage"></p>
+
+
+            <section class="moreInfo">
+
+                <p class="label">
+                    E-mail: 
+                    <span id="email" class="backgroundMessage"></span>
+                </p>
+
+                <p class="label">
+                    Empresa: 
+                    <span id="company" class="backgroundCompany"></span>
+                </p>
+
+
+
+                <p class="label">
+                    Repositórios: 
+                    <span id="repos"></span>
+                </p>
+
+                <p class="label">
+                    Seguidores: 
+                    <span id="followers"></span>
+                </p>
+
+                <p class="label">
+                    Seguindo: 
+                    <span id="following"></span>
+                </p>
+
+            </section>
+
+        </article>
+
+    </main>
+
+
+    <footer>
+
+        <span>Desenvolvido por João Matheus &copy; 2024</span>
+
+        <section class="containerGithub">
+
+            <img src="images/github-brands-solid.svg" alt="Icon Github" class="iconGithub" />
+
+            <a href="https://github.com/joao3872" target="_blank" rel="noopener noreferrer">Meu GitHub</a>
+
+        </section>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="script/script.js"></script>
+    
+</body>
+</html>

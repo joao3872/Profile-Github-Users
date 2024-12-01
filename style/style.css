@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Inconsolata&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --background: #D39E7C;
+    --black: #000;
+    --green-whatsapp: #25D366;
+    --desaturated-red: #e61919;
+    --variation-cyan: #4B9093;
+    --white: #fff;
+}
+
+
+body {
+    background: var(--background);
+}
+
+header, footer {
+    padding: 10px 20px 15px 20px;
+    width: 100%;
+    height: 50px;
+    background: var(--variation-cyan);
+}
+
+header .logo {
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+
+
+main {
+    padding: 20px 0 50px 0;
+}
+
+main .containerSearch, .containerProfile, .infoUser, .visitProfile, .containerUrl, .containerGithub {
+    display: flex;
+}
+
+main .containerSearch {
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+main .containerSearch .searchUser {
+    border: 4px solid var(--black);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, .7);
+    padding: 20px;
+    width: 60%;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+    outline: none;
+}
+
+main .containerSearch .btnSearch {
+    background: none;
+    border-radius: 15px;
+    border: 4px solid var(--black);
+    padding: 8px 12px;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--black);
+}
+
+main .containerSearch .btnSearch:hover {
+    background: var(--green-whatsapp);
+    border-color: var(--white);
+}
+
+main .containerProfile {
+    background: var(--variation-cyan);
+    padding: 25px 15px;
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+main .containerProfile .infoUser .imgProfile {
+    border: 5px solid var(--background);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+main .containerProfile .infoUser {
+    align-items: center;
+}
+
+main .containerProfile .infoUser .containerUserName {
+    margin-left: 15px;
+}
+
+main .containerProfile .infoUser .containerUserName .name {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+main .containerProfile .titleCenter {
+    text-align: center;
+    margin: 15px 0;
+}
+
+main .containerProfile .profile {
+    margin-left: 15px;
+}
+
+main .containerProfile .profile, .site {
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+main .containerProfile .containerUrl {
+    align-items: center;
+    margin: auto;
+}
+
+main .containerProfile .containerUrl .iconUrl {
+    height: 24px;
+    margin-right: 12px;
+}
+
+main .containerProfile .containerUrl .site {
+    margin: 0 auto;
+}
+
+main .containerProfile .bio, .siteMessage {
+    font-size: 17px;
+    text-align: center;
+}
+
+main .containerProfile .moreInfo {
+    margin-top: 12px;
+}
+
+main .containerProfile .moreInfo .label {
+    font-weight: bold;
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+main .containerProfile .siteMessage, .backgroundMessage, .backgroundCompany {
+    color: var(--desaturated-red);
+    padding: 3px 7px;
+}
+
+
+
+footer {
+    padding: 25px 30px 35px 30px;
+    height: 150px;
+    text-align: center;
+}
+
+footer span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer .containerGithub {
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+}
+
+footer .containerGithub .iconGithub {
+    height: 26px;
+    margin-right: 15px;
+}
+
+footer .containerGithub a {
+    font-size: 17px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+/* Responsivo Tablet */
+@media (601px <= width <= 900px) {
+    header {
+        height: 52.5px;
+    }
+
+    header .logo {
+        font-size: 28px;
+    }
+
+    main .containerSearch .searchUser {
+        width: 50%;
+    }
+
+    main .containerProfile {
+        width: 70%;
+    }
+
+    main .containerProfile .infoUser .imgProfile {
+        width: 150px;
+        height: 150px;
+    }
+
+    footer {
+        height: 130px;
+    }
+
+    footer span {
+        font-size: 19px;
+    }
+
+    footer .containerGithub .iconGithub {
+        height: 28px;
+    }
+
+    footer .containerGithub a {
+        font-size: 18px;
+    }
+}
+
+
+
+/* Responsivo Desktop */
+@media (width >= 901px) {
+    header {
+        height: 55px;
+    }
+
+    header .logo {
+        font-size: 30px;
+    }
+
+    main .containerSearch .searchUser {
+        width: 30%;
+    }
+
+    main .containerSearch .btnSearch {
+        cursor: pointer;
+    }
+
+    main .containerProfile {
+        width: 45%;
+    }
+
+    main .containerProfile .infoUser .imgProfile {
+        width: 160px;
+        height: 160px;
+    }
+
+    footer {
+        height: 130px;
+    }
+
+    footer span {
+        font-size: 21px;
+    }
+
+    footer .containerGithub .iconGithub {
+        height: 30px;
+    }
+
+    footer .containerGithub a {
+        font-size: 20px;
+    }
+}
