@@ -18,15 +18,15 @@
 
 ### Tablet:
 
-<img src="" />
+<img src="images/tablet.gif" />
 
 ### Versão Desktop:
 
-<img src="" />
+<img src="images/desktop.gif" />
 
 <br>
 <br>
 
 ### Deploy:
 
-* #### <a href="" target="_blank">Acessar a Página</a>
+* #### <a href="https://joao3872.github.io/Profile-Github-Users/" target="_blank">Acessar a Página</a>
