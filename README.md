@@ -18,11 +18,11 @@
 
 ### Tablet:
 
-<img src="" />
+<img src="images/tablet.gif" />
 
 ### Versão Desktop:
 
-<img src="" />
+<img src="images/desktop.gif" />
 
 <br>
 <br>
