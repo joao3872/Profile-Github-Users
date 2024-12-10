@@ -14,7 +14,7 @@
 
 ### Versão Mobile:
 
-<img src="" />
+<img src="images/mobile.gif" />
 
 ### Tablet:
 
